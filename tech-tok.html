@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Tok</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #ff5722, #e64a19);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        header img {
+            height: 60px;
+            margin-right: 15px;
+            transition: transform 0.3s;
+        }
+        
+        header img:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Navigation */
+        nav {
+            text-align: center;
+            background: #222;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            display: inline-block;
+            transition: 0.3s ease-in-out;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            background: #ff5722;
+        }
+        
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        /* Sections */
+        .section {
+            background: #2a2a2a;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.2);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease-in-out;
+        }
+        
+        h2 {
+            color: #ff5722;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            color: white;
+            background: #ff5722;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background: #e64a19;
+        }
+        
+        /* Image Styling */
+        .org-chart img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 87, 34, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        
+        /* Scroll Animation */
+        .fade-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Tech-Tok Logo"> 
+        Welcome to Tech-Tok 🚀
+    </header>
+
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#product">Product</a>
+        <a href="#organization">Organization Chart</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="section" id="intro">
+            <h2>I. INTRODUCTION</h2>
+            <p><strong>Nature of the Company:</strong> Tech-Tok blends innovation, creativity, and commerce, allowing users to explore, learn, and trade tech seamlessly.</p>
+            <p><strong>Mission:</strong> To create a vibrant ecosystem for tech-based education, entertainment, and e-commerce.</p>
+            <p><strong>Vision:</strong> Redefining how people interact with technology.</p>
+            <p><strong>Goals:</strong></p>
+            <ul>
+                <li>Inspire creativity through short-form tech content.</li>
+                <li>Enable seamless access to cutting-edge tech gadgets.</li>
+                <li>Foster a global community of tech enthusiasts.</li>
+                <li>Use AI to enhance user experience.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="product">
+            <h2>II. PRODUCT</h2>
+            <p>Tech-Tok provides an integrated platform with the following features:</p>
+            <ul>
+                <li><strong>Video Sharing:</strong> Short-form content for tech enthusiasts.</li>
+                <li><strong>Marketplace:</strong> Secure transactions for gadgets, software, and services.</li>
+                <li><strong>AI-Powered Recommendations:</strong> Personalized content and product suggestions.</li>
+                <li><strong>Community Features:</strong> Interactive tools to enhance engagement.</li>
+            </ul>
+        </div>
+
+        <div class="section org-chart" id="organization">
+            <h2>III. ORGANIZATION CHART</h2>
+            <p>Tech-Tok’s leadership team ensures innovation, financial growth, and seamless operations:</p>
+            
+            <ul>
+                <li><strong>Chief Executive Officer (CEO):</strong> Sets the company’s strategic vision, oversees all departments, and ensures business growth.</li>
+                
+                <li><strong>Chief Financial Officer (CFO):</strong> Manages financial planning, budgeting, risk management, and ensures the company's financial health.</li>
+                
+                <li><strong>Finance Staff:</strong> Supports financial transactions, bookkeeping, auditing, and compliance with financial regulations.</li>
+                
+                <li><strong>Chief Marketing Officer (CMO):</strong> Develops branding strategies, advertising campaigns, and oversees customer engagement.</li>
+                
+                <li><strong>Marketing Manager:</strong> Executes marketing plans, manages social media, and analyzes market trends to boost brand visibility.</li>
+                
+                <li><strong>Chief Technology Officer (CTO):</strong> Oversees technological development, platform security, and ensures innovation in app features.</li>
+                
+                <li><strong>Chief Information Officer (CIO):</strong> Manages IT infrastructure, data security, and ensures efficient use of technology within the company.</li>
+            </ul>
+            
+            <p><strong>Organizational Chart:</strong></p>
+            <img src="org-chart.png" alt="Organizational Chart">
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Tech-Tok. All rights reserved.
+    </footer>
+
+    <script>
+        // Smooth scrolling effect
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll animation
+        const sections = document.querySelectorAll('.section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
